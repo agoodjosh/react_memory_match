@@ -6,5 +6,6 @@
     display: flex;
     margin: auto;
     width: 80vw;
+    flex-wrap: wrap;
 }
 

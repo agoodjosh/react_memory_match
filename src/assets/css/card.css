@@ -1,4 +1,4 @@
-.card {
+.card-container {
     display: inline-block;
     width: 120px;
     height: 168px;
@@ -8,17 +8,27 @@
     margin: auto;
 }
 
+.card {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+}
+
 .front, .back {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
 }
 
 .front {
-    background-color: black;
+    background-color: gray;
     display: flex;
+    transform: rotateY(180deg);
 }
 
 .front img, .back img {
@@ -27,5 +37,5 @@
 }
 
 .flipped {
-    display: none;
+    transform: rotateY(180deg);
 }
