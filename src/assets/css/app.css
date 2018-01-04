@@ -1,3 +1,10 @@
-.app > h1 {
+.app > h1, .app > h3 {
     text-align: center;
 }
+
+.game-board {
+    display: flex;
+    margin: auto;
+    width: 80vw;
+}
+

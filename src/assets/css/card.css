@@ -5,6 +5,7 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+    margin: auto;
 }
 
 .front, .back {
@@ -18,7 +19,6 @@
 .front {
     background-color: black;
     display: flex;
-
 }
 
 .front img, .back img {
